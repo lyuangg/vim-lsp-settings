@@ -20,13 +20,6 @@ call lsp_settings#register_server({
     \         'run_vulncheck_exp': v:true,
     \     },
     \ }),
-    \ 'capabilities': lsp_settings#get('gopls', 'capabilities', {
-    \     'textDocument': {
-    \         'documentSymbol': {
-    \             'hierarchicalDocumentSymbolSupport': v:true,
-    \         },
-    \     },
-    \ }),
     \ 'allowlist': lsp_settings#get('gopls', 'allowlist', ['go', 'gomod', 'gohtmltmpl', 'gotexttmpl']),
     \ 'blocklist': lsp_settings#get('gopls', 'blocklist', []),
     \ 'config': lsp_settings#get('gopls', 'config', lsp_settings#server_config('gopls')),
