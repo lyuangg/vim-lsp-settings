@@ -724,6 +724,19 @@
       ]
     }
   ],
+  "htmlangular": [
+    {
+      "command": "angular-language-server",
+      "url": "https://github.com/angular/vscode-ng-language-service",
+      "description": "Angular extension for Visual Studio Code",
+      "config": {
+        "refresh_pattern": "\\(/\\|\\k\\+\\)$"
+      },
+      "requires": [
+        "npm"
+      ]
+    }
+  ],
   "hy": [
     {
       "command": "hyuga",
@@ -1104,6 +1117,18 @@
         ],
         "name": "ajpaulson/julia-syntax.vim"
       }
+    }
+  ],
+  "just": [
+    {
+      "command": "just-lsp",
+      "url": "https://github.com/terror/just-lsp",
+      "description": "A language server for just",
+      "requires": [],
+      "root_uri_patterns": [
+        "justfile",
+        ".justfile"
+      ]
     }
   ],
   "kotlin": [
@@ -2147,6 +2172,18 @@
     }
   ],
   "typescript": [
+    {
+      "command": "typescript-go",
+      "url": "https://github.com/microsoft/typescript-go",
+      "description": "Staging repo for development of native port of TypeScript",
+      "requires": [
+          "npx"
+      ],
+      "root_uri_patterns": [
+        "package.json",
+        "tsconfig.json"
+      ]
+    },
     {
       "command": "typescript-language-server",
       "url": "https://github.com/typescript-language-server/typescript-language-server",
